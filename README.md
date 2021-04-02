@@ -1,3 +1,18 @@
 # weather-classification
 
 The dataset link is https://drive.google.com/file/d/13zJ65SBv5s40HS0kUbF1jT54TX7-awCB/view?usp=sharing
+
+we integrated the method through docker, making it easier to deploy in heterogeneous IoT devices and apply to scenarios of smart city, and now the deployment of the test code is ready, you can download it from the link here: https://hub.docker.com/repository/docker/27718842/weather/general
+
+The docker container technology is to package an application and its required resources into a docker image. Docker can use the image to create a container, so as to realize the rapid transplantation and deployment of the application. The format of the model file trained on pytorch is checkpoint. This file can be used to quickly restart training from the breakpoint after the training is suspended, but it is not conducive to model deployment. Therefore, it is necessary to convert the trained checkpoint file into a usable pickle format model file (this file freezes the network parameters in the network structure). Secondly, the resources that need to be obtained are dependent packages for model operation, such as pytoch framework, OpenCV, numpy, etc. Then, the application interface needs to be designed. 
+
+The model application is designed as follow:
+
+<img width="893" alt="模型应用" src="https://user-images.githubusercontent.com/58459187/113404600-02430680-93db-11eb-85ae-16ace32ebb0e.png">
+
+
+This paper designs an application interface as shown in the figure below. This interface includes two input items, one is the trained weather image classification model, and the other is the weather image to be discriminated. The weather image classification model is saved to the specified path, and the model is read and activated through the __init__() function. The environment image taken by the camera is saved to the specified file path, and the image is read using the read_image() function. Finally, use the interface() function to get the weather conditions of the current location.
+
+*The final output is the weather label with the highest confidence and the confidence value of each type of weather.*
+
+<img width="1536" alt="应用接口设计" src="https://user-images.githubusercontent.com/58459187/113404608-04a56080-93db-11eb-9cad-fbfedf3283c1.png">
