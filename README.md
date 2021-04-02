@@ -1,8 +1,9 @@
 # weather-classification
+To achieve multi-weather classification, we have produced an open-source dataset. The dataset consists of about 60,000 images made up of five common weather classification types1, e.g., sunny, rainy, snowy, foggy, and night, summarized in following tale. Specifically, we also inspected these images qualitatively and disregarded images that did not belong to any of these categories or have low quality.
 
-The dataset link is https://drive.google.com/file/d/13zJ65SBv5s40HS0kUbF1jT54TX7-awCB/view?usp=sharing
+*The dataset link is https://drive.google.com/file/d/13zJ65SBv5s40HS0kUbF1jT54TX7-awCB/view?usp=sharing*
 
-we integrated the method through docker, making it easier to deploy in heterogeneous IoT devices and apply to scenarios of smart city, and now the deployment of the test code is ready, you can download it from the link here: https://hub.docker.com/repository/docker/27718842/weather/general
+we integrated the method through docker, making it easier to deploy in heterogeneous IoT devices and apply to scenarios of smart city, and now the deployment of the test code is ready, *you can download it from the link here: https://hub.docker.com/repository/docker/27718842/weather/general*
 
 Operation is very simple, just type:  
 >docker images
