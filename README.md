@@ -3,9 +3,11 @@ To achieve multi-weather classification, we have produced an open-source dataset
 
 *The dataset link is https://drive.google.com/file/d/13zJ65SBv5s40HS0kUbF1jT54TX7-awCB/view?usp=sharing*
 
-we integrated the method through docker, making it easier to deploy in heterogeneous IoT devices and apply to scenarios of smart city, and now the deployment of the test code is ready, *you can download it from the link here: https://hub.docker.com/repository/docker/27718842/weather/general*
+we integrated the method through docker, making it easier to deploy in heterogeneous IoT devices and apply to scenarios of smart city, and now the deployment of the test code is ready
 
-Operation is very simple, just type:  
+*you can download it from the link here: https://hub.docker.com/repository/docker/27718842/weather/general*
+
+The operation is quite simple, just type:  
 >docker images
 >
 >docker run -it 'image_id' bin/bash
