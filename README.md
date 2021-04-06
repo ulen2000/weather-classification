@@ -13,6 +13,8 @@ we integrated the method through docker, making it easier to deploy in heterogen
 *you can download it from the link here: https://hub.docker.com/repository/docker/27718842/weather/general*
 
 The operation is quite simple, just type:  
+>systemctl start docker
+>
 >docker images
 >
 >docker run -it 'image_id' bin/bash
