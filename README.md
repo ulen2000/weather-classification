@@ -24,7 +24,9 @@ After entering the docker container, type:
 >cd /root/model
 >
 >python customize_service.py -data_path 'your_image_path'
+
 >\# e.g., customize_service.py -data_path ./images/Picture1
+
 >\# Remember to put the pictures that need to be tested in the images folder 
 
 
