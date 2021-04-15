@@ -13,22 +13,25 @@ we integrated the method through docker, making it easier to deploy in heterogen
 *you can download it from the link here: https://hub.docker.com/repository/docker/27718842/weather/general*
 
 The operation is quite simple, just type:  
->systemctl start docker
->
->docker images
->
->docker run -it 'image_id' bin/bash
+```console
+systemctl start docker
+
+docker images
+
+docker run -it 'image_id' bin/bash
+```
 <img width="430" alt="360截图17571113043443" src="https://user-images.githubusercontent.com/58459187/113405869-1b4cb700-93dd-11eb-8756-f3d29caf6260.png">
 
 After entering the docker container, type:
->cd /root/model
->
->python customize_service.py -data_path 'your_image_path'
+```console
+cd /root/model
 
->\# e.g., customize_service.py -data_path ./images/Picture1
+python customize_service.py -data_path 'your_image_path'
 
->\# Remember to put the pictures that need to be tested in the images folder 
+# e.g., customize_service.py -data_path ./images/Picture1
 
+# Remember to put the pictures that need to be tested in the 'images' folder 
+```
 
 
 
