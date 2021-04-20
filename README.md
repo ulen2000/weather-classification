@@ -52,3 +52,13 @@ This paper designs an application interface as shown in the figure below. This i
 
 Linux version 4.4.0-63-generic (buildd@lcy01-31) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) 
 
+dataclasses       0.8
+numpy             1.19.4
+Pillow            8.0.1
+pip               20.3.3
+setuptools        40.8.0
+torch             1.7.1+cu110
+torchaudio        0.7.2
+torchvision       0.8.2+cu110
+typing-extensions 3.7.4.3
+wheel             0.33.1
