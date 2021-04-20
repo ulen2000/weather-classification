@@ -26,7 +26,7 @@ After entering the docker container, type:
 ```console
 cd /root/model
 
-python customize_service.py -data_path 'your_image_path'
+python3 customize_service.py -data_path 'your_image_path'
 
 # e.g., customize_service.py -data_path ./images/Picture1
 
