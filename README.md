@@ -48,3 +48,7 @@ This paper designs an application interface as shown in the figure below. This i
 *The final output is the weather label with the highest confidence and the confidence value of each type of weather.*
 
 <img width="1536" alt="应用接口设计" src="https://user-images.githubusercontent.com/58459187/113404608-04a56080-93db-11eb-9cad-fbfedf3283c1.png">
+
+
+Linux version 4.4.0-63-generic (buildd@lcy01-31) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) 
+
