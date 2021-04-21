@@ -59,10 +59,6 @@ The version of the main python library is as follows:
 >
 >Pillow            8.0.1
 >
->pip               20.3.3
->
->setuptools        40.8.0
->
 >torch             1.7.1+cu110
 >
 >torchaudio        0.7.2
@@ -70,5 +66,3 @@ The version of the main python library is as follows:
 >torchvision       0.8.2+cu110
 >
 >typing-extensions 3.7.4.3
->
->wheel             0.33.1
