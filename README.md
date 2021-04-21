@@ -36,7 +36,8 @@ python3 customize_service.py -data_path 'your_image_path'
 
 
 
-The docker container technology is to package an application and its required resources into a docker image. Docker can use the image to create a container, so as to realize the rapid transplantation and deployment of the application. The format of the model file trained on pytorch is checkpoint. This file can be used to quickly restart training from the breakpoint after the training is suspended, but it is not conducive to model deployment. Therefore, it is necessary to convert the trained checkpoint file into a usable pickle format model file (this file freezes the network parameters in the network structure). Secondly, the resources that need to be obtained are dependent packages for model operation, such as pytoch framework, OpenCV, numpy, etc. Then, the application interface needs to be designed. 
+The docker container technology is to package an application and its required resources into a docker image. Docker can use the image to create a container, so as to realize the rapid transplantation and deployment of the application. 
+The format of the model file trained on pytorch is checkpoint. This file can be used to quickly restart training from the breakpoint after the training is suspended, but it is not conducive to model deployment. Therefore, it is necessary to convert the trained checkpoint file into a usable pickle format model file (this file freezes the network parameters in the network structure). Secondly, the resources that need to be obtained are dependent packages for model operation, such as pytoch framework, OpenCV, numpy, etc. Then, the application interface needs to be designed. 
 
 The model application is designed as follow:
 
