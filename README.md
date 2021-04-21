@@ -49,9 +49,24 @@ This paper designs an application interface as shown in the figure below. This i
 
 <img width="1536" alt="应用接口设计" src="https://user-images.githubusercontent.com/58459187/113404608-04a56080-93db-11eb-9cad-fbfedf3283c1.png">
 
+## Operating environment
 
-Linux version 4.4.0-63-generic (buildd@lcy01-31) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) 
+The SINETStream API supports the following languages.
 
+
+* Java 8
+
+The SINETStream API supports the following messaging systems.
+
+* [Apache Kafka](https://kafka.apache.org/) 2.2.1
+* MQTT v3.1, v3.1.1
+    * [Eclipse Mosquitto](https://mosquitto.org/) v1.6.2
+
+The operating environment in docker container is as follows:
+* Linux version 4.4.0-63-generic (buildd@lcy01-31) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) 
+* Python 3.6
+
+The version of the python library is as follows:
 dataclasses       0.8
 numpy             1.19.4
 Pillow            8.0.1
